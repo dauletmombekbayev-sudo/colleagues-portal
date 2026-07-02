@@ -112,6 +112,12 @@ const employees = [
     department: "Сервис",
     email: "ruslan@company.kz",
   },
+  {
+    name: "Ардак",
+    role: "Коллега",
+    department: "Команда",
+    email: "ardak@company.kz",
+  },
 ];
 
 const initials = (name) =>
