@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портал коллег</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Внутренний портал</p>
+        <h1>Портал коллег</h1>
+      </div>
+      <nav class="topnav" aria-label="Разделы сайта">
+        <a href="#news">Новости</a>
+        <a href="#announcements">Объявления</a>
+        <a href="#calendar">Календарь</a>
+        <a href="#birthdays">Дни рождения</a>
+        <a href="#people">Сотрудники</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Сегодня в компании</p>
+          <h2>Все важное для команды в одном месте</h2>
+          <p>
+            Следите за новостями, объявлениями, событиями и быстро находите
+            коллег по имени, отделу или должности.
+          </p>
+        </div>
+        <div class="hero-panel" aria-label="Краткая сводка">
+          <div class="metric">
+            <span>3</span>
+            <p>новости</p>
+          </div>
+          <div class="metric">
+            <span>4</span>
+            <p>события</p>
+          </div>
+          <div class="metric">
+            <span>6</span>
+            <p>сотрудников</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-grid">
+        <article class="section-block" id="news">
+          <div class="section-heading">
+            <p class="eyebrow">Новости компании</p>
+            <h2>Последние обновления</h2>
+          </div>
+          <div class="news-list" id="newsList"></div>
+        </article>
+
+        <article class="section-block accent-block" id="announcements">
+          <div class="section-heading">
+            <p class="eyebrow">Объявления</p>
+            <h2>Важное</h2>
+          </div>
+          <div class="announcement-list" id="announcementList"></div>
+        </article>
+      </section>
+
+      <section class="wide-section" id="calendar">
+        <div class="section-heading">
+          <p class="eyebrow">Календарь событий</p>
+          <h2>Ближайшие встречи и активности</h2>
+        </div>
+        <div class="event-grid" id="eventList"></div>
+      </section>
+
+      <section class="section-grid">
+        <article class="section-block" id="birthdays">
+          <div class="section-heading">
+            <p class="eyebrow">Дни рождения сотрудников</p>
+            <h2>Кого поздравляем</h2>
+          </div>
+          <div class="birthday-list" id="birthdayList"></div>
+        </article>
+
+        <article class="section-block" id="people">
+          <div class="section-heading with-action">
+            <div>
+              <p class="eyebrow">Поиск сотрудников</p>
+              <h2>Найти коллегу</h2>
+            </div>
+            <span class="counter" id="peopleCount">0</span>
+          </div>
+          <label class="search-box">
+            <span>Поиск</span>
+            <input
+              id="employeeSearch"
+              type="search"
+              placeholder="Имя, отдел, должность..."
+              autocomplete="off"
+            />
+          </label>
+          <div class="people-list" id="peopleList"></div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>Портал коллег · обновите данные в script.js под вашу компанию</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
